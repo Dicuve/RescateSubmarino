@@ -105,6 +105,10 @@ function draw() {
   Fall(g8,explosivo);
   Fall(g9,explosivo);
   Fall(g10,explosivo);
+  if(explosivo.body.speed < 1){
+    Matter.Body.setPosition(explosivo.body,{x:200,y:400});
+   u1.attach(explosivo.body);
+}
     
 }
 
